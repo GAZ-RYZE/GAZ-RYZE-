@@ -5,7 +5,7 @@ const servicesData = [
         price: "2.500 ₽",
         description: "Одностраничный сайт для презентации продукта или услуги.",
         fullDescription: "Идеальное решение для запуска рекламных кампаний, сбора заявок и тестирования гипотез. Включает форму захвата, аналитику и быструю загрузку.",
-        icon: `<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>`,
+        icon: `<img src="Images/Images1.jpg" alt="Лендинг" style="width:64px;height:64px;object-fit:cover;border-radius:12px;">`,
         category: "Базовые"
     },
     {
@@ -13,7 +13,7 @@ const servicesData = [
         price: "3.500 ₽",
         description: "Небольшой сайт о компании, услугах и контактах.",
         fullDescription: "5 информативных страниц: главная, услуги, портфолио, о нас, контакты. Быстрое создание, чистый код.",
-        icon: `<svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 8h8v2H8zM8 12h6v2H8zM8 16h4v2H8z"/></svg>`,
+        icon: `<img src="Images/Images1.jpg" alt="Лендинг" style="width:64px;height:64px;object-fit:cover;border-radius:12px;">`    
         category: "Базовые"
     },
     {
