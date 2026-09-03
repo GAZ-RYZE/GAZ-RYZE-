@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <title>GAZ-RYZE — создание сайтов</title>
+    <link rel="stylesheet" href="gazryze2.css" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="burger" id="burgerBtn">
+            <span></span><span></span><span></span>
+        </div>
+        <div class="logo">GAZ-RYZE<span>.</span></div>
+        <nav class="nav-links">
+            <a href="#" id="homeLink">ГЛАВНАЯ</a>
+            <a href="#" id="catalogLink">УСЛУГИ</a>
+            <a href="#" id="contactsMenuLink">КОНТАКТЫ</a>
+        </nav>
+    </header>
+
+    <div class="overlay" id="overlayMenu"></div>
+
+    <main id="mainContent"></main>
+
+    <div id="orderInstructionsContainer" style="display: block;"></div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>GAZ-RYZE<span>.</span></h4>
+                <p>Создаём сайты, которые решают задачи бизнеса. Быстро, качественно, с душой.</p>
+            </div>
+            <div class="footer-col">
+                <h4>УСЛУГИ</h4>
+                <a href="#" id="footerCatalog">Все услуги</a>
+                <a href="#">Лендинг</a>
+                <a href="#">Интернет-магазин</a>
+                <a href="#">CRM-интеграция</a>
+            </div>
+            <div class="footer-col">
+                <h4>ПОМОЩЬ</h4>
+                <a href="#" id="footerContacts">Контакты</a>
+                <a href="#">Как заказать</a>
+                <a href="#">Сроки</a>
+            </div>
+            <div class="footer-col">
+                <h4>СОЦСЕТИ</h4>
+                <a href="https://t.me/GAZ_RYZE_manager" target="_blank">Telegram</a>
+                <a href="https://t.me/Gaz_Ryze" target="_blank">Канал</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 GAZ-RYZE. Все права защищены.</span>
+        </div>
+    </footer>
+
+    <!-- Модалка контактов -->
+    <div id="contactsModal" class="contacts-modal">
+        <div class="contacts-card">
+            <button class="close-contacts" id="closeContactsBtn">✕</button>
+            <h2>СВЯЗАТЬСЯ С НАМИ</h2>
+            <div class="contact-detail">
+                <div class="contact-icon">📱</div>
+                <div class="contact-info">
+                    <div class="contact-label">Telegram</div>
+                    <div class="contact-value">@GAZ_RYZE_manager</div>
+                </div>
+            </div>
+            <div class="contact-detail">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-info">
+                    <div class="contact-label">Канал</div>
+                    <div class="contact-value">@Gaz_Ryze</div>
+                </div>
+            </div>
+            <a href="https://t.me/GAZ_RYZE_manager" target="_blank" class="contacts-telegram-btn">НАПИСАТЬ</a>
+        </div>
+    </div>
+
+    <div class="sync-notice" id="syncNotice">✅ Готово</div>
+
+    <!-- Модалка деталей услуги -->
+    <div id="productCodeModal" class="product-code-modal">
+        <div class="product-code-card">
+            <button class="close-code-btn" id="closeCodeBtn">✕</button>
+            <div class="code-icon" id="serviceIcon">🖥️</div>
+            <h2 id="serviceName">Услуга</h2>
+            <div class="code-display" id="productCodeDisplay">Цена</div>
+            <div class="product-info" id="productInfoDisplay">Описание</div>
+            <button class="copy-code-btn" id="copyCodeBtn">📞 СВЯЗАТЬСЯ</button>
+            <div class="code-hint">💡 Нажмите, чтобы открыть контакты</div>
+        </div>
+    </div>
+
+    <script src="gazryze3.js"></script>
+</body>
+</html>
