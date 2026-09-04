@@ -13,7 +13,7 @@ const servicesData = [
         price: "3.500 ₽",
         description: "Небольшой сайт о компании, услугах и контактах.",
         fullDescription: "5 информативных страниц: главная, услуги, портфолио, о нас, контакты. Быстрое создание, чистый код.",
-        icon: `<img src="Images/Images1.jpg" alt="Лендинг" style="width:64px;height:64px;object-fit:cover;border-radius:12px;">`    
+        icon: `<img src="Images/Images1.jpg" alt="Лендинг" style="width:64px;height:64px;object-fit:cover;border-radius:12px;">` ,   
         category: "Базовые"
     },
     {
