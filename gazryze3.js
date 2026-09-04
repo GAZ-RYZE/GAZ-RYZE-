@@ -5,7 +5,7 @@ const servicesData = [
         price: "2.500 ₽",
         description: "Одностраничный сайт для презентации продукта или услуги.",
         fullDescription: "Идеальное решение для запуска рекламных кампаний, сбора заявок и тестирования гипотез. Включает форму захвата, аналитику и быструю загрузку.",
-        icon: `<img src="Images/Images1.jpg" alt="Лендинг" style="width:64px;height:64px;object-fit:cover;border-radius:12px;">`,
+        icon: `<img src="Images/Images5.jpg" alt="Лендинг" style="width:64px;height:64px;object-fit:cover;border-radius:12px;">`,
         category: "Базовые"
     },
     {
