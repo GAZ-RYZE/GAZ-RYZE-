@@ -5,7 +5,7 @@ const servicesData = [
         price: "2.500 ₽",
         description: "Одностраничный сайт для презентации продукта или услуги.",
         fullDescription: "Идеальное решение для запуска рекламных кампаний, сбора заявок и тестирования гипотез. Включает форму захвата, аналитику и быструю загрузку.",
-        icon: `<img src="Images/Images5.jpg" alt="Лендинг" style="width:64px;height:64px;object-fit:cover;border-radius:12px;">`,
+        icon: `<img src="./Images/Images5.jpg" alt="Лендинг" style="width:64px;height:64px;object-fit:cover;border-radius:12px;">`,
         category: "Базовые"
     },
     {
@@ -13,7 +13,7 @@ const servicesData = [
         price: "3.500 ₽",
         description: "Небольшой сайт о компании, услугах и контактах.",
         fullDescription: "5 информативных страниц: главная, услуги, портфолио, о нас, контакты. Быстрое создание, чистый код.",
-        icon: `<img src="Images/Images1.jpg" alt="Лендинг" style="width:64px;height:64px;object-fit:cover;border-radius:12px;">` ,   
+        icon: `<img src="./Images/Images6.jpg" alt="Лендинг" style="width:64px;height:64px;object-fit:cover;border-radius:12px;">` ,   
         category: "Базовые"
     },
     {
@@ -21,7 +21,7 @@ const servicesData = [
         price: "5.000 ₽",
         description: "Полноценный сайт для бизнеса с развитой структурой.",
         fullDescription: "До 15 страниц, включая новости, блог, галерею, каталог, отзывы. Адаптив, SEO-оптимизация, админка.",
-        icon: `<svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>`,
+        icon: `<img src="./Images/Images7.jpg" alt="Лендинг" style="width:64px;height:64px;object-fit:cover;border-radius:12px;">`,
         category: "Бизнес"
     },
     {
@@ -29,7 +29,7 @@ const servicesData = [
         price: "15.000–25.000 ₽",
         description: "Магазин с корзиной, оплатой и администрированием.",
         fullDescription: "Готовое решение для продаж. Интеграция с платёжными системами, управление заказами, товарами и скидками.",
-        icon: `<svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>`,
+        icon: `<img src="./Images/Images8.jpg" alt="Лендинг" style="width:64px;height:64px;object-fit:cover;border-radius:12px;">`,
         category: "Магазины"
     },
     {
@@ -37,7 +37,7 @@ const servicesData = [
         price: "50.000 ₽",
         description: "Масштабируемый магазин с расширенным функционалом.",
         fullDescription: "Поддерживает большие каталоги, сложные фильтры, быстрый поиск, интеграцию с 1С и системами учёта.",
-        icon: `<svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><path d="M22 11h-4"/><path d="M6 11H2"/></svg>`,
+        icon: `<img src="./Images/Images1.jpg" alt="Лендинг" style="width:64px;height:64px;object-fit:cover;border-radius:12px;">`,
         category: "Магазины"
     },
     {
@@ -45,7 +45,7 @@ const servicesData = [
         price: "5.000–25.000 ₽",
         description: "Продвинутый каталог товаров с фильтрацией.",
         fullDescription: "Удобный интерфейс для поиска товаров, динамическая загрузка, сортировка, адаптив под мобильные устройства.",
-        icon: `<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M4 6h16"/><path d="M4 12h10"/><path d="M4 18h6"/></svg>`,
+        icon: `<img src="./Images/Images2.jpg" alt="Лендинг" style="width:64px;height:64px;object-fit:cover;border-radius:12px;">`,
         category: "Функциональность"
     },
     {
@@ -53,7 +53,7 @@ const servicesData = [
         price: "5.000–30.000 ₽",
         description: "Настройка интеграции с CRM-системами.",
         fullDescription: "Синхронизация заказов, клиентов, остатков с 1С, Битрикс24, АмоCRM и другими. Повышение эффективности.",
-        icon: `<svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4"/><path d="M4 4l4 4M16 16l4 4"/><path d="M4 20l4-4M16 8l4-4"/><circle cx="12" cy="12" r="3"/></svg>`,
+        icon: `<img src="./Images/Images3.jpg" alt="Лендинг" style="width:64px;height:64px;object-fit:cover;border-radius:12px;">`,
         category: "Интеграции"
     },
     {
@@ -61,7 +61,7 @@ const servicesData = [
         price: "1.500 ₽/час",
         description: "Любые доработки, изменения дизайна и функционала.",
         fullDescription: "Поможем улучшить ваш текущий сайт: добавим модули, исправим ошибки, ускорим загрузку, обновим дизайн.",
-        icon: `<svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>`,
+        icon: `<img src="./Images/Images4.jpg" alt="Лендинг" style="width:64px;height:64px;object-fit:cover;border-radius:12px;">`,
         category: "Поддержка"
     }
 ];
