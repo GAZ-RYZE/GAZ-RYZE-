@@ -21,10 +21,6 @@ body {
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
 }
-@keyframes slideInRight {
-    from { opacity: 0; transform: translateX(50px); }
-    to { opacity: 1; transform: translateX(0); }
-}
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
@@ -34,7 +30,7 @@ body {
     50% { box-shadow: 0 0 40px rgba(255, 107, 107, 0.4); }
 }
 
-/* ---------- ШАПКА ---------- */
+/* ---------- ШАПКА (логотип слева, меню справа) ---------- */
 .header {
     position: fixed;
     top: 0;
@@ -45,6 +41,7 @@ body {
     z-index: 100;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     transition: all 0.3s ease;
 }
 .header.scrolled {
@@ -54,7 +51,6 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* ---------- ЛОГОТИП ---------- */
 .header .logo {
     font-size: 2rem;
     font-weight: 900;
@@ -66,12 +62,11 @@ body {
     color: #ff6b6b;
 }
 
-/* ---------- МЕНЮ (десктоп) ---------- */
+/* ---------- МЕНЮ (справа) ---------- */
 .header .nav-links {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-left: 60px;
 }
 .header .nav-links a {
     color: rgba(255, 255, 255, 0.7);
@@ -99,85 +94,17 @@ body {
     width: 100%;
 }
 
-/* ---------- БУРГЕР ---------- */
+/* ---------- БУРГЕР СКРЫТ (не используется) ---------- */
 .burger {
     display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    margin-right: 20px;
-    z-index: 110;
-}
-.burger span {
-    width: 28px;
-    height: 2px;
-    background: white;
-    border-radius: 2px;
-    transition: 0.3s;
 }
 
-/* ---------- САЙДБАР (мобильное меню) ---------- */
+/* ---------- САЙДБАР СКРЫТ (не используется) ---------- */
 .side-menu {
-    position: fixed;
-    top: 0;
-    left: -300px;
-    width: 280px;
-    height: 100%;
-    background: #0a0a0a;
-    z-index: 200;
-    padding: 60px 30px;
-    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border-right: 1px solid rgba(255, 255, 255, 0.05);
-    overflow-y: auto;
-}
-.side-menu.open {
-    left: 0;
-}
-.side-menu .menu-close {
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 1.8rem;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    transition: 0.3s;
-}
-.side-menu .menu-close:hover {
-    color: #ff6b6b;
-    transform: rotate(90deg);
-}
-.side-menu a {
-    display: block;
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: none;
-    padding: 15px 0;
-    font-weight: 600;
-    letter-spacing: 1px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    transition: 0.3s;
-}
-.side-menu a:hover {
-    color: #ff6b6b;
-    padding-left: 10px;
-}
-
-/* ---------- ОВЕРЛЕЙ (для меню) ---------- */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(4px);
-    z-index: 150;
     display: none;
-    opacity: 0;
-    transition: opacity 0.3s ease;
 }
-.overlay.active {
-    display: block !important;
-    opacity: 1;
+.overlay {
+    display: none;
 }
 
 /* ---------- ГЕРОЙ ---------- */
@@ -255,7 +182,7 @@ body {
     color: white;
 }
 
-/* ---------- КАТАЛОГ / УСЛУГИ ---------- */
+/* ---------- КАТАЛОГ ---------- */
 .catalog {
     padding: 60px 50px 80px;
     background: #0a0a0a;
@@ -282,18 +209,18 @@ body {
     color: #ff6b6b;
 }
 
-/* ---------- СЕТКА УСЛУГ (ровные карточки) ---------- */
+/* ---------- СЕТКА УСЛУГ ---------- */
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 28px;
     animation: fadeInUp 0.6s ease;
 }
 
 .category-card {
     background: rgba(255, 255, 255, 0.03);
     border-radius: 16px;
-    padding: 28px 20px 20px;
+    padding: 24px 20px 20px;
     text-align: center;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -301,7 +228,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 320px;
+    min-height: 340px;
 }
 .category-card:hover {
     transform: translateY(-8px);
@@ -313,24 +240,25 @@ body {
     transform: scale(0.97);
 }
 
-/* ---------- ИКОНКИ SVG (вместо эмодзи) ---------- */
 .category-icon {
-    width: 64px;
-    height: 64px;
+    width: 100%;
+    max-width: 280px;
+    height: 160px;
     margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 12px;
+    overflow: hidden;
     flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.05);
 }
-.category-icon svg {
+.category-icon img {
     width: 100%;
     height: 100%;
-    fill: none;
-    stroke: #ff6b6b;
-    stroke-width: 1.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+.category-card:hover .category-icon img {
+    transform: scale(1.03);
 }
 
 .category-name {
@@ -355,7 +283,6 @@ body {
     margin-bottom: 14px;
 }
 
-/* ---------- КНОПКА В КАРТОЧКЕ ---------- */
 .view-code-btn {
     background: rgba(255, 107, 107, 0.15);
     border: 1px solid rgba(255, 107, 107, 0.3);
@@ -378,7 +305,7 @@ body {
     transform: scale(0.97);
 }
 
-/* ---------- ИНСТРУКЦИЯ / ПРЕИМУЩЕСТВА ---------- */
+/* ---------- ПРЕИМУЩЕСТВА ---------- */
 .order-steps {
     background: rgba(255, 255, 255, 0.02);
     border-radius: 24px;
@@ -522,7 +449,7 @@ footer {
     letter-spacing: 1px;
 }
 
-/* ---------- МОДАЛКА КОНТАКТОВ ---------- */
+/* ---------- МОДАЛКИ ---------- */
 .contacts-modal {
     position: fixed;
     top: 0;
@@ -618,7 +545,6 @@ footer {
     box-shadow: 0 8px 30px rgba(255, 107, 107, 0.3);
 }
 
-/* ---------- МОДАЛКА ДЕТАЛЕЙ УСЛУГИ ---------- */
 .product-code-modal {
     position: fixed;
     top: 0;
@@ -672,6 +598,12 @@ footer {
 .code-icon {
     font-size: 3.5rem;
     margin-bottom: 8px;
+}
+.code-icon img {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 .product-code-card h2 {
     font-size: 1.5rem;
@@ -774,11 +706,13 @@ footer {
     .header .logo {
         font-size: 1.5rem;
     }
+    /* На мобилках меню становится компактнее */
     .header .nav-links {
-        display: none;
+        gap: 20px;
     }
-    .burger {
-        display: flex;
+    .header .nav-links a {
+        font-size: 0.7rem;
+        letter-spacing: 1px;
     }
     .hero-section {
         padding: 120px 20px 60px;
@@ -799,12 +733,15 @@ footer {
         padding: 40px 16px 60px;
     }
     .categories-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
         gap: 16px;
     }
     .category-card {
-        min-height: 280px;
+        min-height: 300px;
         padding: 20px 14px;
+    }
+    .category-icon {
+        height: 130px;
     }
     .order-steps {
         margin: 0 16px 30px;
@@ -842,10 +779,6 @@ footer {
     .contacts-card {
         padding: 28px 20px 24px;
     }
-    .category-icon {
-        width: 48px;
-        height: 48px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -856,18 +789,23 @@ footer {
     .header .logo {
         font-size: 1.3rem;
     }
+    .header .nav-links {
+        gap: 14px;
+    }
+    .header .nav-links a {
+        font-size: 0.6rem;
+        letter-spacing: 0.5px;
+    }
     .categories-grid {
         grid-template-columns: 1fr 1fr;
         gap: 12px;
     }
     .category-card {
-        min-height: 250px;
+        min-height: 270px;
         padding: 16px 12px;
     }
     .category-icon {
-        width: 40px;
-        height: 40px;
-        margin-bottom: 10px;
+        height: 100px;
     }
     .category-name {
         font-size: 0.95rem;
@@ -881,8 +819,4 @@ footer {
     .hero-section h1 {
         font-size: 2rem;
     }
-    .side-menu {
-        width: 260px;
-        padding: 50px 20px;
     }
-}
