@@ -29,6 +29,10 @@ body {
     0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 107, 0.2); }
     50% { box-shadow: 0 0 40px rgba(255, 107, 107, 0.4); }
 }
+@keyframes iconFadeIn {
+    from { opacity: 0; transform: scale(0.6) rotate(-8deg); }
+    to   { opacity: 1; transform: scale(1) rotate(0deg); }
+}
 
 /* ---------- ШАПКА (логотип слева, меню справа) ---------- */
 .header {
@@ -246,19 +250,29 @@ body {
     height: 160px;
     margin-bottom: 16px;
     border-radius: 12px;
-    overflow: hidden;
     flex-shrink: 0;
-    background: rgba(255, 255, 255, 0.05);
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.08), rgba(255, 255, 255, 0.03));
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
 }
-.category-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.category-icon svg {
+    width: 64px;
+    height: 64px;
+    color: #ff6b6b;
     display: block;
-    transition: transform 0.4s ease;
+    animation: iconFadeIn 0.5s ease both;
+    transition: transform 0.4s ease, filter 0.4s ease;
 }
-.category-card:hover .category-icon img {
-    transform: scale(1.03);
+.category-card:hover .category-icon {
+    border-color: rgba(255, 107, 107, 0.3);
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.15), rgba(255, 255, 255, 0.05));
+}
+.category-card:hover .category-icon svg {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 12px rgba(255, 107, 107, 0.5));
 }
 
 .category-name {
@@ -596,14 +610,21 @@ footer {
     transform: rotate(90deg);
 }
 .code-icon {
-    font-size: 3.5rem;
-    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.15), rgba(255, 255, 255, 0.03));
+    border: 1px solid rgba(255, 107, 107, 0.25);
 }
-.code-icon img {
-    width: 80px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 8px;
+.code-icon svg {
+    width: 44px;
+    height: 44px;
+    color: #ff6b6b;
+    display: block;
 }
 .product-code-card h2 {
     font-size: 1.5rem;
@@ -706,7 +727,6 @@ footer {
     .header .logo {
         font-size: 1.5rem;
     }
-    /* На мобилках меню становится компактнее */
     .header .nav-links {
         gap: 20px;
     }
@@ -742,6 +762,10 @@ footer {
     }
     .category-icon {
         height: 130px;
+    }
+    .category-icon svg {
+        width: 52px;
+        height: 52px;
     }
     .order-steps {
         margin: 0 16px 30px;
@@ -807,6 +831,10 @@ footer {
     .category-icon {
         height: 100px;
     }
+    .category-icon svg {
+        width: 40px;
+        height: 40px;
+    }
     .category-name {
         font-size: 0.95rem;
     }
@@ -819,4 +847,12 @@ footer {
     .hero-section h1 {
         font-size: 2rem;
     }
+    .code-icon {
+        width: 72px;
+        height: 72px;
     }
+    .code-icon svg {
+        width: 36px;
+        height: 36px;
+    }
+}
