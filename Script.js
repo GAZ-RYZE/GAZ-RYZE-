@@ -1,5 +1,4 @@
 // ---------- ДАННЫЕ УСЛУГ ----------
-// ---------- ДАННЫЕ УСЛУГ ----------
 const servicesData = [
     {
         name: "Лендинг",
@@ -58,14 +57,13 @@ const servicesData = [
         category: "Интеграции"
     },
     {
-        name: "Доработка  сайта",
+        name: "Доработка сайта",
         price: "1 500 ₽/час",
         description: "Любые доработки, изменения дизайна и функционала.",
         fullDescription: "Поможем улучшить ваш текущий сайт: добавим модули, исправим ошибки, ускорим загрузку, обновим дизайн, настроим SEO. Работаем с любыми CMS и фреймворками.",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2.7-2.7z"/></svg>`,
         category: "Поддержка"
     },
-    // === НОВЫЕ УСЛУГИ НА ОСНОВЕ LLM ===
     {
         name: "ChatGPT-бот для сайта",
         price: "от 8 000 ₽",
@@ -75,7 +73,7 @@ const servicesData = [
         category: "Искусственный интеллект"
     },
     {
-        name: "Генерация контента ()",
+        name: "Генерация контента (AI)",
         price: "от 3 000 ₽",
         description: "Создание текстов и изображений с помощью ИИ.",
         fullDescription: "Генерация уникального контента для сайта: SEO-тексты, описания товаров, статьи для блога, изображения для соцсетей. Используем современные нейросети (GPT, Midjourney).",
@@ -132,29 +130,44 @@ function renderBenefits() {
             <div class="steps-title">ПОЧЕМУ GAZ-RYZE</div>
             <div class="steps-container">
                 <div class="step-card">
-                    <div class="step-number">⚡</div>
+                    <div class="step-number">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
                     <div class="step-title">Быстро</div>
                     <div class="step-desc">Сроки от 3 рабочих дней</div>
                 </div>
                 <div class="step-card">
-                    <div class="step-number">🎯</div>
+                    <div class="step-number">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>
+                    </div>
                     <div class="step-title">Под ключ</div>
                     <div class="step-desc">Дизайн, вёрстка, программирование, SEO</div>
                 </div>
                 <div class="step-card">
-                    <div class="step-number">📞</div>
-                    <div class="step-title">Поддержка</div>
-                    <div class="step-desc">Бесплатное сопровождение 30 дней</div>
+                    <div class="step-number">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+                    </div>
+                    <div class="step-title">Приватно</div>
+                    <div class="step-desc">Полная скрытность информации о клиентах</div>
                 </div>
                 <div class="step-card">
-                    <div class="step-number">💼</div>
+                    <div class="step-number">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg>
+                    </div>
                     <div class="step-title">Портфолио</div>
                     <div class="step-desc">Более 50 успешных проектов</div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                    </div>
+                    <div class="step-title">Поддержка</div>
+                    <div class="step-desc">Бесплатное сопровождение 30 дней</div>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 24px;">
                 <div class="bot-contact">
-                    <span>📲 <a href="https://t.me/GAZ_RYZE_manager" target="_blank">@GAZ_RYZE_manager</a> — свяжитесь с нами</span>
+                    <span>Мы гарантируем полную конфиденциальность и скрытность информации о клиентах. <a href="https://t.me/GAZ_RYZE_manager" target="_blank">@GAZ_RYZE_manager</a> — свяжитесь с нами</span>
                 </div>
             </div>
         </div>
@@ -187,7 +200,7 @@ function showMainPage() {
                 <div class="category-name">${service.name}</div>
                 <div class="service-description">${service.description}</div>
                 <div class="service-price">${service.price}</div>
-                <button class="view-code-btn" onclick="event.stopPropagation(); showServiceDetail(${index})">📞 ЗАКАЗАТЬ</button>
+                <button class="view-code-btn" onclick="event.stopPropagation(); showServiceDetail(${index})">ЗАКАЗАТЬ</button>
             </div>
         `;
     });
