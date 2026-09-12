@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <title>GAZ-RYZE — It услуг для бизнеса</title>
+    <title>GAZ-RYZE — создание сайтов</title>
     <link rel="stylesheet" href="Style.css" />
 </head>
 <body>
@@ -48,6 +48,13 @@
         </div>
         <div class="footer-bottom">
             <span>© 2026 GAZ-RYZE. Все права защищены.</span>
+            <div class="footer-privacy">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                    <path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z"/>
+                    <path d="M9 12l2 2 4-4"/>
+                </svg>
+                <span>Мы гарантируем конфиденциальность и скрытность информации о клиентах</span>
+            </div>
         </div>
     </footer>
 
@@ -57,35 +64,52 @@
             <button class="close-contacts" id="closeContactsBtn">✕</button>
             <h2>СВЯЗАТЬСЯ С НАМИ</h2>
             <div class="contact-detail">
-                <div class="contact-icon">📱</div>
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+                        <path d="M22 2 11 13"/>
+                        <path d="M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                </div>
                 <div class="contact-info">
                     <div class="contact-label">Telegram</div>
                     <div class="contact-value">@GAZ_RYZE_manager</div>
                 </div>
             </div>
             <div class="contact-detail">
-                <div class="contact-icon">✉️</div>
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="m2 7 10 6 10-6"/>
+                    </svg>
+                </div>
                 <div class="contact-info">
                     <div class="contact-label">Канал</div>
                     <div class="contact-value">@Gaz_Ryze</div>
                 </div>
             </div>
+            <div class="contact-privacy-note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                    <path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z"/>
+                    <path d="M9 12l2 2 4-4"/>
+                </svg>
+                <span>Полная конфиденциальность ваших данных</span>
+            </div>
             <a href="https://t.me/GAZ_RYZE_manager" target="_blank" class="contacts-telegram-btn">НАПИСАТЬ</a>
         </div>
     </div>
 
-    <div class="sync-notice" id="syncNotice">✅ Готово</div>
+    <div class="sync-notice" id="syncNotice">Готово</div>
 
     <!-- Модалка деталей услуги -->
     <div id="productCodeModal" class="product-code-modal">
         <div class="product-code-card">
             <button class="close-code-btn" id="closeCodeBtn">✕</button>
-            <div class="code-icon" id="serviceIcon">🖥️</div>
+            <div class="code-icon" id="serviceIcon"></div>
             <h2 id="serviceName">Услуга</h2>
             <div class="code-display" id="productCodeDisplay">Цена</div>
             <div class="product-info" id="productInfoDisplay">Описание</div>
-            <button class="copy-code-btn" id="copyCodeBtn"> СВЯЗАТЬСЯ</button>
-            <div class="code-hint">💡 Нажмите, чтобы открыть контакты</div>
+            <button class="copy-code-btn" id="copyCodeBtn">СВЯЗАТЬСЯ</button>
+            <div class="code-hint">Нажмите, чтобы открыть контакты</div>
         </div>
     </div>
 
