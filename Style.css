@@ -26,15 +26,15 @@ body {
     50% { transform: translateY(-10px); }
 }
 @keyframes glowPulse {
-    0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 107, 0.2); }
-    50% { box-shadow: 0 0 40px rgba(255, 107, 107, 0.4); }
+    0%, 100% { box-shadow: 0 0 20px rgba(107, 158, 255, 0.2); }
+    50% { box-shadow: 0 0 40px rgba(107, 158, 255, 0.4); }
 }
 @keyframes iconFadeIn {
     from { opacity: 0; transform: scale(0.6) rotate(-8deg); }
     to   { opacity: 1; transform: scale(1) rotate(0deg); }
 }
 
-/* ---------- ШАПКА (логотип слева, меню справа) ---------- */
+/* ---------- ШАПКА ---------- */
 .header {
     position: fixed;
     top: 0;
@@ -63,10 +63,10 @@ body {
     flex-shrink: 0;
 }
 .header .logo span {
-    color: #ff6b6b;
+    color: #6b9eff;
 }
 
-/* ---------- МЕНЮ (справа) ---------- */
+/* ---------- МЕНЮ ---------- */
 .header .nav-links {
     display: flex;
     align-items: center;
@@ -88,7 +88,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: #ff6b6b;
+    background: #6b9eff;
     transition: 0.3s;
 }
 .header .nav-links a:hover {
@@ -98,15 +98,8 @@ body {
     width: 100%;
 }
 
-/* ---------- БУРГЕР СКРЫТ (не используется) ---------- */
-.burger {
-    display: none;
-}
-
-/* ---------- САЙДБАР СКРЫТ (не используется) ---------- */
-.side-menu {
-    display: none;
-}
+.burger,
+.side-menu,
 .overlay {
     display: none;
 }
@@ -139,12 +132,12 @@ body {
 }
 .hero-section .hero-badge {
     display: inline-block;
-    background: rgba(255, 107, 107, 0.15);
-    border: 1px solid rgba(255, 107, 107, 0.3);
+    background: rgba(107, 158, 255, 0.15);
+    border: 1px solid rgba(107, 158, 255, 0.3);
     padding: 8px 24px;
     border-radius: 30px;
     font-size: 0.7rem;
-    color: #ff6b6b;
+    color: #6b9eff;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 24px;
@@ -159,7 +152,7 @@ body {
     line-height: 1.1;
 }
 .hero-section h1 span {
-    color: #ff6b6b;
+    color: #6b9eff;
 }
 .hero-section p {
     font-size: 1.1rem;
@@ -210,7 +203,7 @@ body {
     text-transform: uppercase;
 }
 .section-title .view-all:hover {
-    color: #ff6b6b;
+    color: #6b9eff;
 }
 
 /* ---------- СЕТКА УСЛУГ ---------- */
@@ -236,8 +229,8 @@ body {
 }
 .category-card:hover {
     transform: translateY(-8px);
-    background: rgba(255, 107, 107, 0.05);
-    border-color: rgba(255, 107, 107, 0.3);
+    background: rgba(107, 158, 255, 0.05);
+    border-color: rgba(107, 158, 255, 0.3);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
 }
 .category-card:active {
@@ -251,7 +244,7 @@ body {
     margin-bottom: 16px;
     border-radius: 12px;
     flex-shrink: 0;
-    background: linear-gradient(135deg, rgba(255, 107, 107, 0.08), rgba(255, 255, 255, 0.03));
+    background: linear-gradient(135deg, rgba(107, 158, 255, 0.08), rgba(255, 255, 255, 0.03));
     border: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
     align-items: center;
@@ -261,18 +254,18 @@ body {
 .category-icon svg {
     width: 64px;
     height: 64px;
-    color: #ff6b6b;
+    color: #6b9eff;
     display: block;
     animation: iconFadeIn 0.5s ease both;
     transition: transform 0.4s ease, filter 0.4s ease;
 }
 .category-card:hover .category-icon {
-    border-color: rgba(255, 107, 107, 0.3);
-    background: linear-gradient(135deg, rgba(255, 107, 107, 0.15), rgba(255, 255, 255, 0.05));
+    border-color: rgba(107, 158, 255, 0.3);
+    background: linear-gradient(135deg, rgba(107, 158, 255, 0.15), rgba(255, 255, 255, 0.05));
 }
 .category-card:hover .category-icon svg {
     transform: scale(1.1);
-    filter: drop-shadow(0 0 12px rgba(255, 107, 107, 0.5));
+    filter: drop-shadow(0 0 12px rgba(107, 158, 255, 0.5));
 }
 
 .category-name {
@@ -292,14 +285,14 @@ body {
 
 .service-price {
     font-weight: 700;
-    color: #ff6b6b;
+    color: #6b9eff;
     font-size: 1.2rem;
     margin-bottom: 14px;
 }
 
 .view-code-btn {
-    background: rgba(255, 107, 107, 0.15);
-    border: 1px solid rgba(255, 107, 107, 0.3);
+    background: rgba(107, 158, 255, 0.15);
+    border: 1px solid rgba(107, 158, 255, 0.3);
     padding: 12px 20px;
     border-radius: 30px;
     font-weight: 600;
@@ -311,8 +304,8 @@ body {
     margin-top: auto;
 }
 .view-code-btn:hover {
-    background: #ff6b6b;
-    border-color: #ff6b6b;
+    background: #6b9eff;
+    border-color: #6b9eff;
     transform: scale(1.02);
 }
 .view-code-btn:active {
@@ -353,14 +346,14 @@ body {
 }
 .step-card:hover {
     transform: translateY(-6px);
-    border-color: rgba(255, 107, 107, 0.2);
+    border-color: rgba(107, 158, 255, 0.2);
     background: rgba(255, 255, 255, 0.05);
 }
 .step-number {
     width: 48px;
     height: 48px;
-    background: rgba(255, 107, 107, 0.15);
-    color: #ff6b6b;
+    background: rgba(107, 158, 255, 0.15);
+    color: #6b9eff;
     font-size: 1.4rem;
     font-weight: 800;
     border-radius: 50%;
@@ -370,8 +363,13 @@ body {
     margin: 0 auto 16px;
     transition: 0.3s;
 }
+.step-number svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
 .step-card:hover .step-number {
-    background: #ff6b6b;
+    background: #6b9eff;
     color: white;
     transform: scale(1.1);
 }
@@ -390,21 +388,23 @@ body {
     margin-top: 30px;
     text-align: center;
     background: rgba(255, 255, 255, 0.03);
-    padding: 16px 24px;
-    border-radius: 60px;
+    padding: 18px 28px;
+    border-radius: 20px;
     display: inline-block;
     width: auto;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid rgba(255, 255, 255, 0.05);
+    max-width: 700px;
 }
 .bot-contact span {
     color: rgba(255, 255, 255, 0.7);
     font-weight: 500;
     font-size: 0.9rem;
+    line-height: 1.6;
 }
 .bot-contact a {
-    color: #ff6b6b;
+    color: #6b9eff;
     text-decoration: none;
     font-weight: 600;
 }
@@ -433,7 +433,7 @@ footer {
     letter-spacing: 1px;
 }
 .footer-col h4 span {
-    color: #ff6b6b;
+    color: #6b9eff;
 }
 .footer-col p {
     color: rgba(255, 255, 255, 0.4);
@@ -450,7 +450,7 @@ footer {
     transition: 0.3s;
 }
 .footer-col a:hover {
-    color: #ff6b6b;
+    color: #6b9eff;
     padding-left: 4px;
 }
 .footer-bottom {
@@ -461,6 +461,20 @@ footer {
     color: rgba(255, 255, 255, 0.2);
     font-size: 0.75rem;
     letter-spacing: 1px;
+}
+.footer-privacy {
+    margin-top: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+}
+.footer-privacy svg {
+    color: #6b9eff;
+    flex-shrink: 0;
+    opacity: 0.7;
 }
 
 /* ---------- МОДАЛКИ ---------- */
@@ -511,7 +525,7 @@ footer {
     transition: 0.3s;
 }
 .close-contacts:hover {
-    color: #ff6b6b;
+    color: #6b9eff;
     transform: rotate(90deg);
 }
 .contact-detail {
@@ -525,7 +539,11 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 .contact-icon {
-    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b9eff;
+    flex-shrink: 0;
 }
 .contact-info {
     text-align: left;
@@ -541,10 +559,26 @@ footer {
     color: white;
     font-weight: 600;
 }
+.contact-privacy-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.75rem;
+    margin: 14px 0 4px;
+    padding: 10px 16px;
+    background: rgba(107, 158, 255, 0.06);
+    border: 1px solid rgba(107, 158, 255, 0.15);
+    border-radius: 12px;
+}
+.contact-privacy-note svg {
+    color: #6b9eff;
+    flex-shrink: 0;
+}
 .contacts-telegram-btn {
     display: inline-block;
     margin-top: 18px;
-    background: #ff6b6b;
+    background: #6b9eff;
     color: #0a0a0a;
     padding: 14px 30px;
     border-radius: 30px;
@@ -556,7 +590,7 @@ footer {
 }
 .contacts-telegram-btn:hover {
     transform: scale(1.03);
-    box-shadow: 0 8px 30px rgba(255, 107, 107, 0.3);
+    box-shadow: 0 8px 30px rgba(107, 158, 255, 0.3);
 }
 
 .product-code-modal {
@@ -606,7 +640,7 @@ footer {
     transition: 0.3s;
 }
 .close-code-btn:hover {
-    color: #ff6b6b;
+    color: #6b9eff;
     transform: rotate(90deg);
 }
 .code-icon {
@@ -617,13 +651,13 @@ footer {
     height: 88px;
     margin: 0 auto 16px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(255, 107, 107, 0.15), rgba(255, 255, 255, 0.03));
-    border: 1px solid rgba(255, 107, 107, 0.25);
+    background: linear-gradient(135deg, rgba(107, 158, 255, 0.15), rgba(255, 255, 255, 0.03));
+    border: 1px solid rgba(107, 158, 255, 0.25);
 }
 .code-icon svg {
     width: 44px;
     height: 44px;
-    color: #ff6b6b;
+    color: #6b9eff;
     display: block;
 }
 .product-code-card h2 {
@@ -637,13 +671,13 @@ footer {
     font-size: 2rem;
     font-weight: 800;
     font-family: 'Courier New', monospace;
-    color: #ff6b6b;
+    color: #6b9eff;
     background: rgba(255, 255, 255, 0.03);
     padding: 20px;
     border-radius: 14px;
     letter-spacing: 4px;
     margin: 12px 0;
-    border: 1px solid rgba(255, 107, 107, 0.2);
+    border: 1px solid rgba(107, 158, 255, 0.2);
 }
 .product-info {
     color: rgba(255, 255, 255, 0.5);
@@ -652,7 +686,7 @@ footer {
     line-height: 1.6;
 }
 .copy-code-btn {
-    background: #ff6b6b;
+    background: #6b9eff;
     color: #0a0a0a;
     border: none;
     font-weight: 700;
@@ -666,7 +700,7 @@ footer {
 }
 .copy-code-btn:hover {
     transform: scale(1.02);
-    box-shadow: 0 8px 30px rgba(255, 107, 107, 0.3);
+    box-shadow: 0 8px 30px rgba(107, 158, 255, 0.3);
 }
 .copy-code-btn:active {
     transform: scale(0.97);
@@ -685,7 +719,7 @@ footer {
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%) translateY(20px);
-    background: rgba(255, 107, 107, 0.9);
+    background: rgba(107, 158, 255, 0.9);
     color: #0a0a0a;
     padding: 12px 24px;
     border-radius: 30px;
@@ -695,7 +729,7 @@ footer {
     transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: none;
     z-index: 100;
-    box-shadow: 0 8px 30px rgba(255, 107, 107, 0.3);
+    box-shadow: 0 8px 30px rgba(107, 158, 255, 0.3);
 }
 .sync-notice.show {
     opacity: 1;
@@ -836,23 +870,4 @@ footer {
         height: 40px;
     }
     .category-name {
-        font-size: 0.95rem;
-    }
-    .service-description {
-        font-size: 0.75rem;
-    }
-    .service-price {
-        font-size: 1rem;
-    }
-    .hero-section h1 {
-        font-size: 2rem;
-    }
-    .code-icon {
-        width: 72px;
-        height: 72px;
-    }
-    .code-icon svg {
-        width: 36px;
-        height: 36px;
-    }
-}
+        font
