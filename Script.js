@@ -26,7 +26,7 @@ const servicesData = [
     },
     {
         name: "Интернет-магазин (до 100 товаров)",
-        price: "15 000–25 000 ₽",
+        price: "от 15 000 ₽",
         description: "Магазин с корзиной, оплатой и администрированием.",
         fullDescription: "Готовое решение для продаж. Интеграция с платёжными системами (ЮKassa, Robokassa), управление заказами, товарами, скидками и остатками. Адаптивный дизайн.",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6L22 7H6"/></svg>`,
@@ -42,7 +42,7 @@ const servicesData = [
     },
     {
         name: "Каталог с фильтрами",
-        price: "5 000–25 000 ₽",
+        price: "от 1 000 ₽",
         description: "Продвинутый каталог товаров с фильтрацией.",
         fullDescription: "Удобный интерфейс для поиска товаров, динамическая загрузка, сортировка по цене/популярности, адаптив под мобильные устройства. Фильтры по характеристикам, брендам, цене.",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18"/><path d="M6 12h12"/><path d="M10 19h4"/></svg>`,
@@ -50,7 +50,7 @@ const servicesData = [
     },
     {
         name: "CRM-интеграция (в т.ч. 1С)",
-        price: "5 000–30 000 ₽",
+        price: "от 5 000 ₽",
         description: "Настройка интеграции с CRM-системами.",
         fullDescription: "Синхронизация заказов, клиентов, остатков с 1С, Битрикс24, АмоCRM, RetailCRM и другими системами. Автоматизация процессов, уменьшение ручной работы.",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6a3 3 0 1 0 0 .01"/><path d="M15 6a3 3 0 1 0 0 .01"/><path d="M9 18a3 3 0 1 0 0 .01"/><path d="M15 18a3 3 0 1 0 0 .01"/><path d="M9 9v6"/><path d="M15 9v6"/><path d="M9 12h6"/></svg>`,
@@ -58,7 +58,7 @@ const servicesData = [
     },
     {
         name: "Доработка сайта",
-        price: "1 500 ₽/час",
+        price: "от 1 500 ₽/час",
         description: "Любые доработки, изменения дизайна и функционала.",
         fullDescription: "Поможем улучшить ваш текущий сайт: добавим модули, исправим ошибки, ускорим загрузку, обновим дизайн, настроим SEO. Работаем с любыми CMS и фреймворками.",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2.7-2.7z"/></svg>`,
@@ -66,7 +66,7 @@ const servicesData = [
     },
     {
         name: "ChatGPT-бот для сайта",
-        price: "от 8 000 ₽",
+        price: "от 4 000 ₽",
         description: "Интеграция AI-чатбота на ваш сайт.",
         fullDescription: "Интеграция ChatGPT на ваш сайт для круглосуточного общения с клиентами. Бот отвечает на вопросы, помогает с выбором товара, принимает заявки. Настраивается под ваш бизнес.",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H8l-5 3 1.5-5A8 8 0 1 1 21 12z"/><circle cx="9" cy="12" r="0.8" fill="currentColor"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/><circle cx="15" cy="12" r="0.8" fill="currentColor"/></svg>`,
@@ -82,7 +82,7 @@ const servicesData = [
     },
     {
         name: "Рекомендательная система",
-        price: "от 12 000 ₽",
+        price: "от 5 000 ₽",
         description: "Персонализированные рекомендации товаров.",
         fullDescription: "Внедрение рекомендательного движка на основе поведенческих данных. «Вам также может понравиться», «С этим покупают» — увеличиваем средний чек и продажи.",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6L3.3 9.3l6.1-.7z"/></svg>`,
@@ -90,7 +90,7 @@ const servicesData = [
     },
     {
         name: "Аналитика голоса (Voice AI)",
-        price: "от 20 000 ₽",
+        price: "от 2 000 ₽",
         description: "Анализ звонков и голосовых сообщений нейросетью.",
         fullDescription: "Расшифровка и анализ звонков, определение эмоций, ключевых фраз, оценка качества работы менеджеров. Автоматическая отчётность по каждому диалогу.",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/><path d="M8 21h8"/></svg>`,
