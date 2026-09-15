@@ -2,7 +2,7 @@
 const servicesData = [
     {
         name: "Лендинг",
-        price: "от 2 500 ₽",
+        price: "от 1 000 ₽",
         description: "Одностраничный сайт для презентации продукта или услуги.",
         fullDescription: "Идеальное решение для запуска рекламных кампаний, сбора заявок и тестирования гипотез. Включает форму захвата, аналитику, быструю загрузку и адаптив под все устройства. Оптимизирован для конверсии.",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M7 13h6"/><path d="M7 17h4"/><circle cx="17" cy="15" r="2"/></svg>`,
@@ -10,7 +10,7 @@ const servicesData = [
     },
     {
         name: "Сайт-визитка (5 стр.)",
-        price: "от 3 500 ₽",
+        price: "от 1 500 ₽",
         description: "Небольшой сайт о компании, услугах и контактах.",
         fullDescription: "5 информативных страниц: главная, услуги, портфолио, о нас, контакты. Быстрое создание, чистый код, адаптивный дизайн и SEO-оптимизация для быстрого старта.",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10"/><path d="M7 12h10"/><path d="M7 16h6"/></svg>`,
@@ -18,7 +18,7 @@ const servicesData = [
     },
     {
         name: "Корпоративный (10–15 стр.)",
-        price: "от 5 000 ₽",
+        price: "от 1 000 ₽",
         description: "Полноценный сайт для бизнеса с развитой структурой.",
         fullDescription: "До 15 страниц, включая новости, блог, галерею, каталог, отзывы. Адаптив, SEO-оптимизация, удобная админка для самостоятельного управления контентом.",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/><path d="M9 10h.01"/><path d="M15 10h.01"/></svg>`,
@@ -26,7 +26,7 @@ const servicesData = [
     },
     {
         name: "Интернет-магазин (до 100 товаров)",
-        price: "от 15 000 ₽",
+        price: "от 1 000 ₽",
         description: "Магазин с корзиной, оплатой и администрированием.",
         fullDescription: "Готовое решение для продаж. Интеграция с платёжными системами (ЮKassa, Robokassa), управление заказами, товарами, скидками и остатками. Адаптивный дизайн.",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6L22 7H6"/></svg>`,
@@ -34,7 +34,7 @@ const servicesData = [
     },
     {
         name: "Интернет-магазин (до 500 товаров)",
-        price: "от 50 000 ₽",
+        price: "от 5 000 ₽",
         description: "Масштабируемый магазин с расширенным функционалом.",
         fullDescription: "Поддерживает большие каталоги, сложные фильтры, быстрый поиск, интеграцию с 1С и системами учёта. Возможность импорта товаров из CSV/Excel.",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg>`,
@@ -58,7 +58,7 @@ const servicesData = [
     },
     {
         name: "Доработка сайта",
-        price: "от 1 500 ₽/час",
+        price: "от 250 ₽/час",
         description: "Любые доработки, изменения дизайна и функционала.",
         fullDescription: "Поможем улучшить ваш текущий сайт: добавим модули, исправим ошибки, ускорим загрузку, обновим дизайн, настроим SEO. Работаем с любыми CMS и фреймворками.",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2.7-2.7z"/></svg>`,
@@ -66,7 +66,7 @@ const servicesData = [
     },
     {
         name: "ChatGPT-бот для сайта",
-        price: "от 4 000 ₽",
+        price: "от 1 000 ₽",
         description: "Интеграция AI-чатбота на ваш сайт.",
         fullDescription: "Интеграция ChatGPT на ваш сайт для круглосуточного общения с клиентами. Бот отвечает на вопросы, помогает с выбором товара, принимает заявки. Настраивается под ваш бизнес.",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H8l-5 3 1.5-5A8 8 0 1 1 21 12z"/><circle cx="9" cy="12" r="0.8" fill="currentColor"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/><circle cx="15" cy="12" r="0.8" fill="currentColor"/></svg>`,
@@ -74,7 +74,7 @@ const servicesData = [
     },
     {
         name: "Генерация контента (AI)",
-        price: "от 3 000 ₽",
+        price: "от 2 000 ₽",
         description: "Создание текстов и изображений с помощью ИИ.",
         fullDescription: "Генерация уникального контента для сайта: SEO-тексты, описания товаров, статьи для блога, изображения для соцсетей. Используем современные нейросети (GPT, Midjourney).",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3"/><path d="M12 18v3"/><path d="M3 12h3"/><path d="M18 12h3"/><path d="M5.6 5.6l2.1 2.1"/><path d="M16.3 16.3l2.1 2.1"/><path d="M5.6 18.4l2.1-2.1"/><path d="M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.2"/></svg>`,
@@ -82,7 +82,7 @@ const servicesData = [
     },
     {
         name: "Рекомендательная система",
-        price: "от 5 000 ₽",
+        price: "от 2 000 ₽",
         description: "Персонализированные рекомендации товаров.",
         fullDescription: "Внедрение рекомендательного движка на основе поведенческих данных. «Вам также может понравиться», «С этим покупают» — увеличиваем средний чек и продажи.",
         icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6L3.3 9.3l6.1-.7z"/></svg>`,
